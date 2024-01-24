@@ -1,118 +1,68 @@
-/* uses at least five (5) different CSS selectors (e.g. tag (example), class (.example),
-or ID (#example)), and within which you use a total of at least five (5) different CSS properties,
-such as font-size, or margin
-*/
+#centeredImageContainer {
+  position: fixed; /* Fixed position */
+  top: 40%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust the centering */
+  opacity: 1; /* Start fully visible */
 
-body {
-    background-color:black;
+  /* Animation */
+  animation: fadeAndMoveUp 5s ease forwards;
+  animation-delay: 2s;
 }
 
-/*
-Header
-*/
+#centeredImage {
+  max-width: 100%; /* Ensure the image is responsive */
+  max-height: 100vh; /* Limit height to the viewport */
+}
 
-.hidehome {
+@keyframes fadeAndMoveUp {
+  to {
+    opacity: 0; /* Fade out */
+    transform: translate(-50%, -70%); /* Move upwards */
+  }
+}
+
+@keyframes fadeInAndMoveDown {
+  from {
     opacity: 0;
+    transform: translate(0, -40%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0); /* End at the element's original position */
+  }
 }
 
-#enter {
-    color:white;
-    font-size: 2rem;
-    position:relative;
-    top:2rem;
-    opacity:0;
-    transition-property: all;
-    transition-duration: .75s;
-    transition-delay: 5s;
+header, main {
+  color: white;
+  font-size: 1.5rem;
+
+  /* Animation */
+  animation: fadeInAndMoveDown 5s ease forwards 5s;
 }
 
-.navicon, #caret {
-    text-decoration:none;
-    color: white;
-    margin-left:.25rem;
-    margin-right:.25rem;
-    transition-property: all;
-    transition-duration: .75s;
+.navicon {
+  text-decoration: none;
+  color: white;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  transition-property: all;
+  transition-duration: 0.75s;
 }
-
-#caret:hover {
-    transform: rotate(90deg);
-}
-
-#caret{
-    font-size: calc(2.5rem + 1.5vw);
-}
-
 .navicon:hover,
-#caret:hover,
-.nav-masthead .navicon:focus {
-    color: #27897F;
-    transition:color .8s ease-in-out;
-    transition-property: all;
-    transition-duration: .8s;
-    transition-timing-function: ease-in-out;
-    transform: scale(1.1);
+.navicon:focus {
+  color: #27897f;
+  transition: color 0.8s ease-in-out;
+  transition-property: all;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
+  transform: scale(1.1);
+  text-decoration: none;
 }
-
-
 .navicon .active {
   color: #fff;
 }
-
-
-/*
- * Base structure
- */
-
 body {
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-}
-
-.cover-container {
-  max-width: 35em;
-}
-
-
-/*
- * More styles
- */
-
-
-audio {
-    display:none;
-}
-
-.interests {
-    margin: 10px;
-    padding: 20px;
-    display: flex;
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-}
-
-.hobby {
-    filter: invert(100%);
-    opacity:0.25;
-    padding-bottom: 1rem;
-    transition-duration:2s;
-    max-width:70px !important;
-    max-height:65px !important;
-}
-
-.hobby:hover {
-    opacity:.95;
-    transition-duration:2s;
-}
-
-.footercaret{
-    position:fixed;
-    left:15px;
-    bottom:5px;
-    line-height:0px;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
 }
