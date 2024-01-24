@@ -31,7 +31,7 @@
 </head>
 
 <body
-    class="bg-gradient-to-t from-neutral-900 overflow-hidden to-neutral-800 text-neutral-50 h-[100vh] w-[100vw] overscroll-none">
+    class="bg-gradient-to-b from-black overflow-hidden to-teal-900 text-neutral-50 h-[100vh] w-[100vw] overscroll-none">
 
     <div id="centeredImageContainer">
         <img src="/assets/kevincodeslogotextonly.png" alt="Kevin Codes logo" id="centeredImage">
@@ -39,26 +39,29 @@
 
     <header class="opacity-0" id="navbar">
         <div>
-            <nav class="flex flex-row space-x-4 w-[100vw] py-12 justify-center">
+            <nav class="flex flex-row flex-wrap space-x-8 w-[100vw] py-12 justify-center :justify-between px-[5vw]">
                 <div>
                     <img src="/assets/kevincodeslogohorizontaltransparent.png" alt="Kevin Codes logo" id="logo"
-                        class="h-[80px] mr-[12vw] object-contain w-auto" alt="Kevin Codes logo" />
+                        class="h-[80px] max-w-[80vw] mb-3 lg:mb-0 object-contain w-auto"
+                        alt="Kevin Codes logo" />
                 </div>
-                <a id="resume" href="/assets/resume.pdf" download="kevingoldberg-resume" class="relative navicon"
-                    href="/resume">
-                    <i class="text-[3rem] bi bi-file-earmark-person"></i>
-                    <div class="absolute -translate-y-2 -translate-x-1 w-auto text-sm font-light">
-                        Resume</div>
-                </a>
-                <a class="navicon" href="https://github.com/kevkevco" target=”_blank”>
-                    <i class="text-[3rem] bi bi-github"></i>
-                </a>
-                <a class="navicon" href="https://www.linkedin.com/in/kevinhgold/" target=”_blank”>
-                    <i class="text-[3rem] bi bi-linkedin"></i>
-                </a>
-                <a class="navicon" href="#" onclick="copyToClipboard()" copy="kevinhgold@gmail.com" id="email">
-                    <i class="text-[3rem] bi bi-envelope"></i>
-                </a>
+                <div class="flex flex-row">
+                    <a id="resume" href="/assets/resume.pdf" download="kevingoldberg-resume" class="relative navicon"
+                        href="/resume">
+                        <i class="text-[3rem] bi bi-file-earmark-person"></i>
+                        <div class="absolute -translate-y-2 -translate-x-1 w-auto text-sm">
+                            Resume</div>
+                    </a>
+                    <a class="navicon" href="https://github.com/kevkevco" target=”_blank”>
+                        <i class="text-[3rem] bi bi-github"></i>
+                    </a>
+                    <a class="navicon" href="https://www.linkedin.com/in/kevinhgold/" target=”_blank”>
+                        <i class="text-[3rem] bi bi-linkedin"></i>
+                    </a>
+                    <a class="navicon" href="#" onclick="copyToClipboard()" copy="kevinhgold@gmail.com" id="email">
+                        <i class="text-[3rem] bi bi-envelope"></i>
+                    </a>
+                </div>
             </nav>
         </div>
     </header>
@@ -108,11 +111,11 @@
                     Each role is a testament to my ability to merge analytical thinking with creative
                     problem-solving.
                 </p>
-                <p class="text-teal-600 font-bold">
+                <p class="text-white font-bold">
                     I'd love to hear from you!
-                <div>
+                <div class="-translate-y-4">
                     <button href="#"
-                        class="font-bold bg-white rounded px-3 py-1.5 text-black hover:bg-teal-600 transition-all duration-[1.6s] ease-in-out hover:scale-[1.1]"
+                        class="font-bold bg-white rounded px-3 pt-1.5 pb-2 text-black hover:bg-teal-600 transition-all duration-[1.6s] ease-in-out hover:scale-[1.1]"
                         copy="kevinhgold@gmail.com" onclick="copyToClipboard()">
                         <span class="mr-1 inline-block translate-y-0.5">
                             <i class="text-xl bi bi-envelope"></i>
