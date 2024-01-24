@@ -31,35 +31,38 @@
 </head>
 
 <body
-    class="bg-gradient-to-b from-black overflow-hidden to-teal-900 text-neutral-50 h-[100vh] w-[100vw] overscroll-none">
+    class="bg-gradient-to-b from-black to-teal-900 text-neutral-50 min-h-[100vh] w-[100vw] overflow-x-hidden overscroll-x-none">
 
     <div id="centeredImageContainer">
         <img src="/assets/kevincodeslogotextonly.png" alt="Kevin Codes logo" id="centeredImage">
     </div>
 
     <header class="opacity-0" id="navbar">
-        <div>
-            <nav class="flex flex-row flex-wrap space-x-8 w-[100vw] py-12 justify-center :justify-between px-[5vw]">
+        <div class="flex flex-row w-[100vw] justify-center">
+            <nav class="flex flex-row flex-wrap w-full max-w-[1600px] pt-8 pb-2 lg:py-12 justify-center lg:justify-between px-[5vw]">
                 <div>
                     <img src="/assets/kevincodeslogohorizontaltransparent.png" alt="Kevin Codes logo" id="logo"
                         class="h-[80px] max-w-[80vw] mb-3 lg:mb-0 object-contain w-auto"
                         alt="Kevin Codes logo" />
                 </div>
-                <div class="flex flex-row">
-                    <a id="resume" href="/assets/resume.pdf" download="kevingoldberg-resume" class="relative navicon"
-                        href="/resume">
-                        <i class="text-[3rem] bi bi-file-earmark-person"></i>
-                        <div class="absolute -translate-y-2 -translate-x-1 w-auto text-sm">
-                            Resume</div>
+                <div class="flex flex-row justify-center space-x-3 mx-0 md:mx-12 lg:mx-0">
+                        <a href="/assets/resume.pdf" download="kevingoldberg-resume" target=”_blank” class="flex flex-col items-center -space-y-1 group"
+                            href="/resume">
+                            <i class="navicon text-[3rem] bi bi-file-earmark-person"></i>
+                            <div class="transition-all duration-[1.6s] text-sm text-teal-50 font-bold opacity-0 group-hover:opacity-100">Resume</div>
+                        </a>
+
+                    <a href="https://github.com/kevkevco" target=”_blank” class="flex flex-col items-center -space-y-1 group ">
+                        <i class="navicon text-[3rem] bi bi-github"></i>
+                        <div class="transition-all duration-[1.6s] opacity-0 group-hover:opacity-100 text-sm text-teal-50 font-bold font-sans">GitHub</div>
                     </a>
-                    <a class="navicon" href="https://github.com/kevkevco" target=”_blank”>
-                        <i class="text-[3rem] bi bi-github"></i>
+                    <a href="https://www.linkedin.com/in/kevinhgold/" target=”_blank” class="flex flex-col items-center -space-y-1 group ">
+                        <i class="navicon text-[3rem] bi bi-linkedin"></i>
+                        <div class="transition-all duration-[1.6s] opacity-0 group-hover:opacity-100 text-sm text-teal-50 font-bold font-sans">LinkedIn</div>
                     </a>
-                    <a class="navicon" href="https://www.linkedin.com/in/kevinhgold/" target=”_blank”>
-                        <i class="text-[3rem] bi bi-linkedin"></i>
-                    </a>
-                    <a class="navicon" href="#" onclick="copyToClipboard()" copy="kevinhgold@gmail.com" id="email">
-                        <i class="text-[3rem] bi bi-envelope"></i>
+                    <a href="#" onclick="copyToClipboard()" copy="kevinhgold@gmail.com" id="email" class="flex flex-col items-center -space-y-1 group ">
+                        <i class="navicon text-[3rem] bi bi-envelope"></i>
+                        <div class="transition-all duration-[1.6s] opacity-0 group-hover:opacity-100 text-sm text-teal-50 font-bold font-sans">Email</div>
                     </a>
                 </div>
             </nav>
@@ -69,7 +72,7 @@
     <main class="p-8 opacity-0">
         <div id="pageContent" class="flex flex-row justify-center">
             <div class="text-white font-sans text-base space-y-8 max-w-[45rem]">
-                <h3 class="text-teal-600 font-sans text-4xl font-bold" style="">
+                <h3 class="text-teal-600 font-sans text-4xl font-bold">
                     Bridging Technology and Creativity
                 </h3>
                 <p>

@@ -45,14 +45,31 @@
   }
 }
 
-header,
-main {
+@keyframes fadeInAndMoveUp {
+    from {
+      opacity: 0;
+      transform: translate(0, 40%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 0); /* End at the element's original position */
+    }
+  }
+
+header {
   color: white;
   font-size: 1.5rem;
 
   /* Animation */
-  animation: fadeInAndMoveDown 5s ease forwards 5s;
+  animation: fadeInAndMoveDown 1s ease-in-out forwards 6s;
 }
+main {
+    color: white;
+    font-size: 1.5rem;
+  
+    /* Animation */
+    animation: fadeInAndMoveUp 2s ease-in-out forwards 5s;
+  }
 
 .navicon {
   text-decoration: none;
