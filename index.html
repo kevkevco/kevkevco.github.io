@@ -25,12 +25,6 @@
     <!-- Include Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <style type="text/tailwindcss">
-        @layer utilities {
-          
-        }
-      </style>
-
     <!-- Include Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
@@ -42,29 +36,28 @@
     <div id="centeredImageContainer">
         <img src="/assets/kevincodeslogotextonly.png" alt="Kevin Codes logo" id="centeredImage">
     </div>
-    
+
     <header class="opacity-0" id="navbar">
         <div>
-            <nav class="flex flex-row space-x-2 w-[100vw] py-12 justify-center scale-[2.5]">
+            <nav class="flex flex-row space-x-4 w-[100vw] py-12 justify-center">
                 <div>
-                    <img src="/assets/kevincodeslogotextonly.png" alt="Kevin Codes logo" id="logo"
-                        class="h-[25px] mr-[12vw] object-contain w-auto" alt="Kevin Codes logo" />
+                    <img src="/assets/kevincodeslogohorizontaltransparent.png" alt="Kevin Codes logo" id="logo"
+                        class="h-[80px] mr-[12vw] object-contain w-auto" alt="Kevin Codes logo" />
                 </div>
                 <a id="resume" href="/assets/resume.pdf" download="kevingoldberg-resume" class="relative navicon"
                     href="/resume">
-                    <i class="bi bi-file-earmark-person"></i>
-                    <div
-                        class="absolute -bottom-8 left-1 scale-[.4] translate-x-[-3.2rem] -translate-y-5 w-[10rem] text-sm font-semibold">
+                    <i class="text-[3rem] bi bi-file-earmark-person"></i>
+                    <div class="absolute -translate-y-2 -translate-x-1 w-auto text-sm font-light">
                         Resume</div>
                 </a>
                 <a class="navicon" href="https://github.com/kevkevco" target=”_blank”>
-                    <i class="bi bi-github"></i>
+                    <i class="text-[3rem] bi bi-github"></i>
                 </a>
                 <a class="navicon" href="https://www.linkedin.com/in/kevinhgold/" target=”_blank”>
-                    <i class="bi bi-linkedin"></i>
+                    <i class="text-[3rem] bi bi-linkedin"></i>
                 </a>
                 <a class="navicon" href="#" onclick="copyToClipboard()" copy="kevinhgold@gmail.com" id="email">
-                    <i class="bi bi-envelope"></i>
+                    <i class="text-[3rem] bi bi-envelope"></i>
                 </a>
             </nav>
         </div>
@@ -117,15 +110,18 @@
                 </p>
                 <p class="text-teal-600 font-bold">
                     I'd love to hear from you!
+                <div>
+                    <button href="#"
+                        class="font-bold bg-white rounded px-3 py-1.5 text-black hover:bg-teal-600 transition-all duration-[1.6s] ease-in-out hover:scale-[1.1]"
+                        copy="kevinhgold@gmail.com" onclick="copyToClipboard()">
+                        <span class="mr-1 inline-block translate-y-0.5">
+                            <i class="text-xl bi bi-envelope"></i>
+                        </span>
+                        Copy my email
+
+                    </button>
+                </div>
                 </p>
-                <p class="text-white font-bold">
-                    Click here to copy my email: <a href="#" class="navicon" copy="kevinhgold@gmail.com"
-                        onclick="copyToClipboard()">
-                        <span class="scale-150 pl-1 inline-block">
-                            <i class="bi bi-envelope"></i></a>
-                    </span>
-                </p>
-            </div>
     </main>
 
     </div>
