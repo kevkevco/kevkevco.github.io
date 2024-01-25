@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "live-server": "^1.1.0",
+    "prettier": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11"
+  },
+  "name": "kevkevco.github.io",
+  "version": "1.0.0",
+  "main": "myscripts.js",
+  "scripts": {
+    "start": "live-server",
+    "build-css": "tailwindcss build -i styles.css -o dist/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1"
+  }
+}
